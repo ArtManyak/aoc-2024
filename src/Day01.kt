@@ -26,10 +26,10 @@ fun main() {
         }
     }
 
-    val testInput = readInput("testInput")
+    val testInput = readLines("testInput")
     check(part1(testInput) == 11) { "wrong part 1!" }
     check(part2(testInput) == 31) { "wrong part 2!" }
-    val input = readInput("input")
+    val input = readLines("input")
     part1(input).println()
     part2(input).println()
 }

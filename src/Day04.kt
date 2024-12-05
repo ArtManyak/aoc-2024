@@ -38,11 +38,11 @@ fun main() {
         }
     }
 
-    val testInput = readInput("testInput")
+    val testInput = readLines("testInput")
     check(part1(testInput) == 18) { "wrong part 1! returned ${part1(testInput)}" }
-    val testInput2 = readInput("testInput2")
+    val testInput2 = readLines("testInput2")
     check(part2(testInput2) == 9) { "wrong part 2! returned ${part2(testInput2)}" }
-    val input = readInput("input")
+    val input = readLines("input")
     part1(input).println()
     part2(input).println()
 }

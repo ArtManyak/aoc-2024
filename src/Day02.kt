@@ -29,10 +29,10 @@ fun main() {
         return input.map { it.split(" ").map { it.toInt() } }.count { isSafe(it, true) }
     }
 
-    val testInput = readInput("testInput")
+    val testInput = readLines("testInput")
     check(part1(testInput) == 2) { "wrong part 1! returned ${part1(testInput)}" }
     check(part2(testInput) == 4) { "wrong part 2! returned ${part2(testInput)}" }
-    val input = readInput("input")
+    val input = readLines("input")
     part1(input).println()
     part2(input).println()
 }
