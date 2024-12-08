@@ -25,3 +25,9 @@ val directions4 = listOf(
     Pair(1, 0),   // down
     Pair(0, -1),  // left
 )
+
+data class Point(val i: Int, val j: Int) {
+    fun isWithinBounds(input: List<String>): Boolean {
+        return i in input.indices && j in input[0].indices
+    }
+}
