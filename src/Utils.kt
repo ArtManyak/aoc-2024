@@ -30,4 +30,8 @@ data class Point(val i: Int, val j: Int) {
     fun isWithinBounds(input: List<String>): Boolean {
         return i in input.indices && j in input[0].indices
     }
+
+    operator fun plus(dir: Pair<Int, Int>): Point = Point(i + dir.first, j + dir.second)
 }
+
+operator fun List<String>.get(p: Point): Char = this[p.i][p.j]
